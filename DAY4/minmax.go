@@ -38,14 +38,12 @@ func main() {
 	fmt.Println("Minimum number is:", min)
 	fmt.Println("Maximum number is:", max)
 
-	// Menggunakan pointer untuk referencing
 	minPtr := &min
 	maxPtr := &max
 	fmt.Println("Using pointers:")
 	fmt.Println("Minimum number is:", *minPtr)
 	fmt.Println("Maximum number is:", *maxPtr)
 
-	// Menggunakan deferencing
 	*minPtr = 99
 	*maxPtr = 100
 	fmt.Println("After modifying with pointers:")
